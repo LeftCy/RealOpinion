@@ -1,0 +1,1900 @@
+@charset "UTF-8";
+h1, h2, h3, h4, h5 {
+  color: #0f3433;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+}
+
+body {
+  background-color: #abd1c6;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* navigation */
+}
+
+header nav {
+  height: 100%;
+  background-color: rgba(0, 70, 67, 0.9);
+}
+
+header .navbar-brand img {
+  height: 40px;
+}
+
+header .dropdown-menu {
+  background-color: rgba(0, 70, 67, 0.9);
+}
+
+header .dropdown-menu a {
+  color: #abd1c6;
+}
+
+header .dropdown-menu a:hover {
+  color: #abd1c6;
+  background-color: rgba(0, 70, 67, 0.9);
+}
+
+header ul.nav li a {
+  text-decoration: none !important;
+  padding: 5px 30px;
+}
+
+header ul.nav li:not(.active) a:hover {
+  color: #d08047;
+  border-bottom: 4px solid #d08047;
+}
+
+header ul.nav li.active {
+  color: #d08047;
+  border-bottom: 4px solid #d08047;
+}
+
+header.hide {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.background-container {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background-container .heading {
+  padding: 150px 0;
+  text-align: center;
+}
+
+.background-container .heading .jumbotron {
+  background-color: rgba(0, 70, 67, 0.5);
+  border-radius: 30px;
+}
+
+.background-container .heading .jumbotron h1, .background-container .heading .jumbotron h2 {
+  padding-bottom: 25px;
+  color: #fffffe;
+}
+
+.background-container .heading .jumbotron .heading-search-bar {
+  display: inline-block;
+  margin-top: 50px;
+  border: solid 2px #abd1c6;
+  background-color: white;
+  border-radius: 999px;
+  padding: 5px 15px;
+  background-color: #abd1c6;
+}
+
+.background-container .heading .jumbotron .heading-search-bar select {
+  outline: none;
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+  height: 30px;
+  border: none;
+  background-color: #abd1c6;
+}
+
+.background-container .heading .jumbotron .heading-search-bar select:hover {
+  background-color: #7ab6a4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.background-container .heading .jumbotron .heading-search-bar input {
+  display: block;
+  height: 30px;
+}
+
+.service-about {
+  background-color: #abd1c6;
+}
+
+.service-about .container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.service-about .container .about {
+  width: 100%;
+}
+
+.service-about .container .about .tab-container {
+  padding: 15px 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.service-about .container .about .tab-container .nav .nav-item .active {
+  background-color: #014643;
+}
+
+.service-about .container .about .tab-container .nav .nav-item .nav-link {
+  color: black;
+}
+
+.service-about .container .about .tab-container .nav .nav-item .nav-link.active {
+  color: white;
+}
+
+.service-about .container .about .message {
+  position: relative;
+  text-align: center;
+}
+
+.service-about .container .about .message img {
+  width: 250px;
+  opacity: 0.5;
+}
+
+.service-about .container .about .message p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 900;
+  color: #2c2c2c;
+}
+
+.advertising-parts .container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #014643;
+  text-align: center;
+}
+
+.advertising-parts .container .about-servise-container {
+  padding: 30px 0 10px 0;
+}
+
+.advertising-parts .container .about-service-container {
+  padding: 0;
+}
+
+.advertising-parts .container .about-service-container .about-service {
+  background-color: #e8e4e6;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.advertising-parts .container .about-service-container .about-service .feature {
+  padding: 10px 0;
+  color: #585858;
+  font-size: 20px;
+}
+
+.advertising-parts .container .link-btn-container {
+  width: 40%;
+  text-align: center;
+}
+
+.advertising-parts .container .link-btn-container a {
+  margin: 0;
+}
+
+.btn .link-btn {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+}
+
+.btn .link-btn:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn .link-btn:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.hear-opinion, .give-opinion {
+  background-color: #ABD1C6;
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.hear-opinion .card-columns, .hear-opinion .card-deck, .give-opinion .card-columns, .give-opinion .card-deck {
+  margin: 15px;
+}
+
+.hear-opinion .card-columns a, .hear-opinion .card-deck a, .give-opinion .card-columns a, .give-opinion .card-deck a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.hear-opinion .card-columns a:hover, .hear-opinion .card-deck a:hover, .give-opinion .card-columns a:hover, .give-opinion .card-deck a:hover {
+  -webkit-filter: brightness(97.5%);
+          filter: brightness(97.5%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 5;
+}
+
+.hear-opinion .card-columns p, .hear-opinion .card-deck p, .give-opinion .card-columns p, .give-opinion .card-deck p {
+  text-align: left;
+}
+
+.hear-opinion .card-columns .fadein-up, .hear-opinion .card-deck .fadein-up, .give-opinion .card-columns .fadein-up, .give-opinion .card-deck .fadein-up {
+  opacity: 0;
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.hear-opinion .card-columns .fade-up.active, .hear-opinion .card-deck .fade-up.active, .give-opinion .card-columns .fade-up.active, .give-opinion .card-deck .fade-up.active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.hear-opinion .card-deck, .give-opinion .card-deck {
+  margin: 0;
+}
+
+.hear-opinion .paginate, .give-opinion .paginate {
+  text-align: center;
+}
+
+.hear-opinion .paginate .paginate-center, .give-opinion .paginate .paginate-center {
+  display: inline-block;
+}
+
+.give-opinion {
+  background-color: #014643;
+  color: #e8e4e6;
+}
+
+.give-opinion h2 {
+  color: #ABD1C6;
+}
+
+footer {
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background-color: #3a2df7;
+  height: 250px;
+  margin-top: auto;
+}
+
+footer .footer-logo a img {
+  height: 150px;
+  width: 150px;
+  float: left;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+footer .footer-right {
+  position: absolute;
+  top: 39px;
+  right: 39px;
+}
+
+footer .footer-right .footer-list a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: #e8e4e6;
+  border-radius: 10px;
+  margin: 10px;
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .footer-right .footer-list a:hover {
+  opacity: 1.0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .footer-right .footer-list a:active {
+  background-color: rgba(80, 80, 80, 0.8);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.service-description {
+  background-color: #abd1c6;
+  text-align: center;
+  margin-top: 75px;
+}
+
+.service-description .how-service, .service-description .what-coin {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  color: #001e1d;
+}
+
+.service-description .how-service h1, .service-description .what-coin h1 {
+  margin-bottom: 1rem;
+}
+
+.service-description .how-service .link-btn, .service-description .what-coin .link-btn {
+  text-align: center;
+  display: block;
+}
+
+.service-description .how-service .link-btn a, .service-description .what-coin .link-btn a {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  display: inline-block;
+}
+
+.service-description .how-service .link-btn a:hover, .service-description .what-coin .link-btn a:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-description .how-service .link-btn a:active, .service-description .what-coin .link-btn a:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.service-description .flow-of-use {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  color: #001e1d;
+}
+
+.service-description .flow-of-use h1 {
+  margin-bottom: 1rem;
+}
+
+.service-description .flow-of-use .description-figure {
+  text-align: center;
+}
+
+.service-description .flow-of-use .description-figure .case-give-opinion, .service-description .flow-of-use .description-figure .case-hear-opinion {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+  display: inline-block;
+}
+
+.auth {
+  margin: 30px 0;
+}
+
+.login-form {
+  margin: 50px 0;
+}
+
+.verify-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+
+.verify-container h2 {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.verify-container p {
+  text-align: center;
+}
+
+.verify-container div {
+  text-align: center;
+}
+
+.verify-container div a {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  margin: 0 5rem;
+  font-weight: bold;
+}
+
+.verify-container div a:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.verify-container div a:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.meeting-show, .give-opinion-show {
+  margin-top: 75px;
+}
+
+.meeting-show .show, .give-opinion-show .show {
+  background-color: #004643;
+  border-radius: 5px;
+  padding: 2.5rem;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+}
+
+.meeting-show .show span, .give-opinion-show .show span {
+  color: #abd1c6;
+}
+
+.meeting-show .show .category-link a, .give-opinion-show .show .category-link a {
+  text-decoration: none;
+  color: rgba(59, 200, 243, 0.8);
+}
+
+.meeting-show .show .category-link a:hover, .give-opinion-show .show .category-link a:hover {
+  color: rgba(59, 200, 243, 0.5);
+}
+
+.meeting-show .show .title-box h1, .give-opinion-show .show .title-box h1 {
+  color: #fffffe;
+  font-size: 32px;
+}
+
+.meeting-show .show .image-box, .give-opinion-show .show .image-box {
+  text-align: center;
+}
+
+.meeting-show .show .image-box img, .give-opinion-show .show .image-box img {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  padding: 30px;
+}
+
+.meeting-show .show .assessment-box, .meeting-show .show .contributor-box, .give-opinion-show .show .assessment-box, .give-opinion-show .show .contributor-box {
+  color: #abd1c6;
+}
+
+.meeting-show .show .assessment-box p, .meeting-show .show .contributor-box p, .give-opinion-show .show .assessment-box p, .give-opinion-show .show .contributor-box p {
+  margin: 0;
+}
+
+.meeting-show .show .contributor-box, .give-opinion-show .show .contributor-box {
+  margin-bottom: 15px;
+}
+
+.meeting-show .show .discription-message, .give-opinion-show .show .discription-message {
+  margin-bottom: 75px;
+}
+
+.meeting-show .show .discription-message h3, .give-opinion-show .show .discription-message h3 {
+  font-size: 20px;
+  color: #abd1c6;
+}
+
+.meeting-show .show .discription-message .detail-description, .give-opinion-show .show .discription-message .detail-description {
+  border-radius: 5px;
+  background-color: #e8e4e6;
+  color: #0f3433;
+}
+
+.meeting-show .show .discription-message .detail-description p, .give-opinion-show .show .discription-message .detail-description p {
+  padding: 1rem;
+  word-break: break-all;
+}
+
+.meeting-show .show .message-contents, .give-opinion-show .show .message-contents {
+  position: relative;
+}
+
+.meeting-show .show .message-contents .contact-btn, .give-opinion-show .show .message-contents .contact-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.meeting-show .show .message-contents .contact-btn .contact-link-btn, .meeting-show .show .message-contents .contact-btn .edit-link-btn, .meeting-show .show .message-contents .contact-btn .delete-btn, .give-opinion-show .show .message-contents .contact-btn .contact-link-btn, .give-opinion-show .show .message-contents .contact-btn .edit-link-btn, .give-opinion-show .show .message-contents .contact-btn .delete-btn {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.meeting-show .show .message-contents .contact-btn .contact-link-btn:hover, .meeting-show .show .message-contents .contact-btn .edit-link-btn:hover, .meeting-show .show .message-contents .contact-btn .delete-btn:hover, .give-opinion-show .show .message-contents .contact-btn .contact-link-btn:hover, .give-opinion-show .show .message-contents .contact-btn .edit-link-btn:hover, .give-opinion-show .show .message-contents .contact-btn .delete-btn:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.meeting-show .show .message-contents .contact-btn .contact-link-btn:active, .meeting-show .show .message-contents .contact-btn .edit-link-btn:active, .meeting-show .show .message-contents .contact-btn .delete-btn:active, .give-opinion-show .show .message-contents .contact-btn .contact-link-btn:active, .give-opinion-show .show .message-contents .contact-btn .edit-link-btn:active, .give-opinion-show .show .message-contents .contact-btn .delete-btn:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.meeting-show .show .message-contents .contact-btn .delete-btn, .give-opinion-show .show .message-contents .contact-btn .delete-btn {
+  background-color: #d16262;
+}
+
+#contact-modal, #delete-modal, #contact-confirm-modal, #warning-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+#contact-modal .contact-form, #contact-modal .delete-form, #contact-modal .contact-confirm-form, #contact-modal .warning-message, #delete-modal .contact-form, #delete-modal .delete-form, #delete-modal .contact-confirm-form, #delete-modal .warning-message, #contact-confirm-modal .contact-form, #contact-confirm-modal .delete-form, #contact-confirm-modal .contact-confirm-form, #contact-confirm-modal .warning-message, #warning-modal .contact-form, #warning-modal .delete-form, #warning-modal .contact-confirm-form, #warning-modal .warning-message {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  border-radius: 5px;
+}
+
+#contact-modal .contact-form .form-heading h2, #contact-modal .contact-form .form-heading p, #contact-modal .contact-form .warning-heading h2, #contact-modal .contact-form .warning-heading p, #contact-modal .delete-form .form-heading h2, #contact-modal .delete-form .form-heading p, #contact-modal .delete-form .warning-heading h2, #contact-modal .delete-form .warning-heading p, #contact-modal .contact-confirm-form .form-heading h2, #contact-modal .contact-confirm-form .form-heading p, #contact-modal .contact-confirm-form .warning-heading h2, #contact-modal .contact-confirm-form .warning-heading p, #contact-modal .warning-message .form-heading h2, #contact-modal .warning-message .form-heading p, #contact-modal .warning-message .warning-heading h2, #contact-modal .warning-message .warning-heading p, #delete-modal .contact-form .form-heading h2, #delete-modal .contact-form .form-heading p, #delete-modal .contact-form .warning-heading h2, #delete-modal .contact-form .warning-heading p, #delete-modal .delete-form .form-heading h2, #delete-modal .delete-form .form-heading p, #delete-modal .delete-form .warning-heading h2, #delete-modal .delete-form .warning-heading p, #delete-modal .contact-confirm-form .form-heading h2, #delete-modal .contact-confirm-form .form-heading p, #delete-modal .contact-confirm-form .warning-heading h2, #delete-modal .contact-confirm-form .warning-heading p, #delete-modal .warning-message .form-heading h2, #delete-modal .warning-message .form-heading p, #delete-modal .warning-message .warning-heading h2, #delete-modal .warning-message .warning-heading p, #contact-confirm-modal .contact-form .form-heading h2, #contact-confirm-modal .contact-form .form-heading p, #contact-confirm-modal .contact-form .warning-heading h2, #contact-confirm-modal .contact-form .warning-heading p, #contact-confirm-modal .delete-form .form-heading h2, #contact-confirm-modal .delete-form .form-heading p, #contact-confirm-modal .delete-form .warning-heading h2, #contact-confirm-modal .delete-form .warning-heading p, #contact-confirm-modal .contact-confirm-form .form-heading h2, #contact-confirm-modal .contact-confirm-form .form-heading p, #contact-confirm-modal .contact-confirm-form .warning-heading h2, #contact-confirm-modal .contact-confirm-form .warning-heading p, #contact-confirm-modal .warning-message .form-heading h2, #contact-confirm-modal .warning-message .form-heading p, #contact-confirm-modal .warning-message .warning-heading h2, #contact-confirm-modal .warning-message .warning-heading p, #warning-modal .contact-form .form-heading h2, #warning-modal .contact-form .form-heading p, #warning-modal .contact-form .warning-heading h2, #warning-modal .contact-form .warning-heading p, #warning-modal .delete-form .form-heading h2, #warning-modal .delete-form .form-heading p, #warning-modal .delete-form .warning-heading h2, #warning-modal .delete-form .warning-heading p, #warning-modal .contact-confirm-form .form-heading h2, #warning-modal .contact-confirm-form .form-heading p, #warning-modal .contact-confirm-form .warning-heading h2, #warning-modal .contact-confirm-form .warning-heading p, #warning-modal .warning-message .form-heading h2, #warning-modal .warning-message .form-heading p, #warning-modal .warning-message .warning-heading h2, #warning-modal .warning-message .warning-heading p {
+  font-weight: bold;
+  text-align: center;
+}
+
+#contact-modal .contact-form .have-coin-container, #contact-modal .delete-form .have-coin-container, #contact-modal .contact-confirm-form .have-coin-container, #contact-modal .warning-message .have-coin-container, #delete-modal .contact-form .have-coin-container, #delete-modal .delete-form .have-coin-container, #delete-modal .contact-confirm-form .have-coin-container, #delete-modal .warning-message .have-coin-container, #contact-confirm-modal .contact-form .have-coin-container, #contact-confirm-modal .delete-form .have-coin-container, #contact-confirm-modal .contact-confirm-form .have-coin-container, #contact-confirm-modal .warning-message .have-coin-container, #warning-modal .contact-form .have-coin-container, #warning-modal .delete-form .have-coin-container, #warning-modal .contact-confirm-form .have-coin-container, #warning-modal .warning-message .have-coin-container {
+  text-align: center;
+}
+
+#contact-modal .contact-form form .contact-submit, #contact-modal .delete-form form .contact-submit, #contact-modal .contact-confirm-form form .contact-submit, #contact-modal .warning-message form .contact-submit, #delete-modal .contact-form form .contact-submit, #delete-modal .delete-form form .contact-submit, #delete-modal .contact-confirm-form form .contact-submit, #delete-modal .warning-message form .contact-submit, #contact-confirm-modal .contact-form form .contact-submit, #contact-confirm-modal .delete-form form .contact-submit, #contact-confirm-modal .contact-confirm-form form .contact-submit, #contact-confirm-modal .warning-message form .contact-submit, #warning-modal .contact-form form .contact-submit, #warning-modal .delete-form form .contact-submit, #warning-modal .contact-confirm-form form .contact-submit, #warning-modal .warning-message form .contact-submit {
+  text-align: center;
+  display: block;
+  margin: 1rem 2rem 0 2rem;
+}
+
+#contact-modal .contact-form form .contact-submit button, #contact-modal .contact-form form .contact-submit div, #contact-modal .delete-form form .contact-submit button, #contact-modal .delete-form form .contact-submit div, #contact-modal .contact-confirm-form form .contact-submit button, #contact-modal .contact-confirm-form form .contact-submit div, #contact-modal .warning-message form .contact-submit button, #contact-modal .warning-message form .contact-submit div, #delete-modal .contact-form form .contact-submit button, #delete-modal .contact-form form .contact-submit div, #delete-modal .delete-form form .contact-submit button, #delete-modal .delete-form form .contact-submit div, #delete-modal .contact-confirm-form form .contact-submit button, #delete-modal .contact-confirm-form form .contact-submit div, #delete-modal .warning-message form .contact-submit button, #delete-modal .warning-message form .contact-submit div, #contact-confirm-modal .contact-form form .contact-submit button, #contact-confirm-modal .contact-form form .contact-submit div, #contact-confirm-modal .delete-form form .contact-submit button, #contact-confirm-modal .delete-form form .contact-submit div, #contact-confirm-modal .contact-confirm-form form .contact-submit button, #contact-confirm-modal .contact-confirm-form form .contact-submit div, #contact-confirm-modal .warning-message form .contact-submit button, #contact-confirm-modal .warning-message form .contact-submit div, #warning-modal .contact-form form .contact-submit button, #warning-modal .contact-form form .contact-submit div, #warning-modal .delete-form form .contact-submit button, #warning-modal .delete-form form .contact-submit div, #warning-modal .contact-confirm-form form .contact-submit button, #warning-modal .contact-confirm-form form .contact-submit div, #warning-modal .warning-message form .contact-submit button, #warning-modal .warning-message form .contact-submit div {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 0.5rem 4rem;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+#contact-modal .contact-form form .contact-submit button:hover, #contact-modal .contact-form form .contact-submit div:hover, #contact-modal .delete-form form .contact-submit button:hover, #contact-modal .delete-form form .contact-submit div:hover, #contact-modal .contact-confirm-form form .contact-submit button:hover, #contact-modal .contact-confirm-form form .contact-submit div:hover, #contact-modal .warning-message form .contact-submit button:hover, #contact-modal .warning-message form .contact-submit div:hover, #delete-modal .contact-form form .contact-submit button:hover, #delete-modal .contact-form form .contact-submit div:hover, #delete-modal .delete-form form .contact-submit button:hover, #delete-modal .delete-form form .contact-submit div:hover, #delete-modal .contact-confirm-form form .contact-submit button:hover, #delete-modal .contact-confirm-form form .contact-submit div:hover, #delete-modal .warning-message form .contact-submit button:hover, #delete-modal .warning-message form .contact-submit div:hover, #contact-confirm-modal .contact-form form .contact-submit button:hover, #contact-confirm-modal .contact-form form .contact-submit div:hover, #contact-confirm-modal .delete-form form .contact-submit button:hover, #contact-confirm-modal .delete-form form .contact-submit div:hover, #contact-confirm-modal .contact-confirm-form form .contact-submit button:hover, #contact-confirm-modal .contact-confirm-form form .contact-submit div:hover, #contact-confirm-modal .warning-message form .contact-submit button:hover, #contact-confirm-modal .warning-message form .contact-submit div:hover, #warning-modal .contact-form form .contact-submit button:hover, #warning-modal .contact-form form .contact-submit div:hover, #warning-modal .delete-form form .contact-submit button:hover, #warning-modal .delete-form form .contact-submit div:hover, #warning-modal .contact-confirm-form form .contact-submit button:hover, #warning-modal .contact-confirm-form form .contact-submit div:hover, #warning-modal .warning-message form .contact-submit button:hover, #warning-modal .warning-message form .contact-submit div:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#contact-modal .contact-form form .contact-submit button:active, #contact-modal .contact-form form .contact-submit div:active, #contact-modal .delete-form form .contact-submit button:active, #contact-modal .delete-form form .contact-submit div:active, #contact-modal .contact-confirm-form form .contact-submit button:active, #contact-modal .contact-confirm-form form .contact-submit div:active, #contact-modal .warning-message form .contact-submit button:active, #contact-modal .warning-message form .contact-submit div:active, #delete-modal .contact-form form .contact-submit button:active, #delete-modal .contact-form form .contact-submit div:active, #delete-modal .delete-form form .contact-submit button:active, #delete-modal .delete-form form .contact-submit div:active, #delete-modal .contact-confirm-form form .contact-submit button:active, #delete-modal .contact-confirm-form form .contact-submit div:active, #delete-modal .warning-message form .contact-submit button:active, #delete-modal .warning-message form .contact-submit div:active, #contact-confirm-modal .contact-form form .contact-submit button:active, #contact-confirm-modal .contact-form form .contact-submit div:active, #contact-confirm-modal .delete-form form .contact-submit button:active, #contact-confirm-modal .delete-form form .contact-submit div:active, #contact-confirm-modal .contact-confirm-form form .contact-submit button:active, #contact-confirm-modal .contact-confirm-form form .contact-submit div:active, #contact-confirm-modal .warning-message form .contact-submit button:active, #contact-confirm-modal .warning-message form .contact-submit div:active, #warning-modal .contact-form form .contact-submit button:active, #warning-modal .contact-form form .contact-submit div:active, #warning-modal .delete-form form .contact-submit button:active, #warning-modal .delete-form form .contact-submit div:active, #warning-modal .contact-confirm-form form .contact-submit button:active, #warning-modal .contact-confirm-form form .contact-submit div:active, #warning-modal .warning-message form .contact-submit button:active, #warning-modal .warning-message form .contact-submit div:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+#contact-modal .contact-form form .contact-submit button:hover, #contact-modal .contact-form form .contact-submit div:hover, #contact-modal .delete-form form .contact-submit button:hover, #contact-modal .delete-form form .contact-submit div:hover, #contact-modal .contact-confirm-form form .contact-submit button:hover, #contact-modal .contact-confirm-form form .contact-submit div:hover, #contact-modal .warning-message form .contact-submit button:hover, #contact-modal .warning-message form .contact-submit div:hover, #delete-modal .contact-form form .contact-submit button:hover, #delete-modal .contact-form form .contact-submit div:hover, #delete-modal .delete-form form .contact-submit button:hover, #delete-modal .delete-form form .contact-submit div:hover, #delete-modal .contact-confirm-form form .contact-submit button:hover, #delete-modal .contact-confirm-form form .contact-submit div:hover, #delete-modal .warning-message form .contact-submit button:hover, #delete-modal .warning-message form .contact-submit div:hover, #contact-confirm-modal .contact-form form .contact-submit button:hover, #contact-confirm-modal .contact-form form .contact-submit div:hover, #contact-confirm-modal .delete-form form .contact-submit button:hover, #contact-confirm-modal .delete-form form .contact-submit div:hover, #contact-confirm-modal .contact-confirm-form form .contact-submit button:hover, #contact-confirm-modal .contact-confirm-form form .contact-submit div:hover, #contact-confirm-modal .warning-message form .contact-submit button:hover, #contact-confirm-modal .warning-message form .contact-submit div:hover, #warning-modal .contact-form form .contact-submit button:hover, #warning-modal .contact-form form .contact-submit div:hover, #warning-modal .delete-form form .contact-submit button:hover, #warning-modal .delete-form form .contact-submit div:hover, #warning-modal .contact-confirm-form form .contact-submit button:hover, #warning-modal .contact-confirm-form form .contact-submit div:hover, #warning-modal .warning-message form .contact-submit button:hover, #warning-modal .warning-message form .contact-submit div:hover {
+  background: #e79924;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+#contact-modal .contact-form form .contact-submit button:active, #contact-modal .contact-form form .contact-submit div:active, #contact-modal .delete-form form .contact-submit button:active, #contact-modal .delete-form form .contact-submit div:active, #contact-modal .contact-confirm-form form .contact-submit button:active, #contact-modal .contact-confirm-form form .contact-submit div:active, #contact-modal .warning-message form .contact-submit button:active, #contact-modal .warning-message form .contact-submit div:active, #delete-modal .contact-form form .contact-submit button:active, #delete-modal .contact-form form .contact-submit div:active, #delete-modal .delete-form form .contact-submit button:active, #delete-modal .delete-form form .contact-submit div:active, #delete-modal .contact-confirm-form form .contact-submit button:active, #delete-modal .contact-confirm-form form .contact-submit div:active, #delete-modal .warning-message form .contact-submit button:active, #delete-modal .warning-message form .contact-submit div:active, #contact-confirm-modal .contact-form form .contact-submit button:active, #contact-confirm-modal .contact-form form .contact-submit div:active, #contact-confirm-modal .delete-form form .contact-submit button:active, #contact-confirm-modal .delete-form form .contact-submit div:active, #contact-confirm-modal .contact-confirm-form form .contact-submit button:active, #contact-confirm-modal .contact-confirm-form form .contact-submit div:active, #contact-confirm-modal .warning-message form .contact-submit button:active, #contact-confirm-modal .warning-message form .contact-submit div:active, #warning-modal .contact-form form .contact-submit button:active, #warning-modal .contact-form form .contact-submit div:active, #warning-modal .delete-form form .contact-submit button:active, #warning-modal .delete-form form .contact-submit div:active, #warning-modal .contact-confirm-form form .contact-submit button:active, #warning-modal .contact-confirm-form form .contact-submit div:active, #warning-modal .warning-message form .contact-submit button:active, #warning-modal .warning-message form .contact-submit div:active {
+  background-color: #aa7527;
+}
+
+#contact-modal .contact-form form .contact-submit .contact-back, #contact-modal .delete-form form .contact-submit .contact-back, #contact-modal .contact-confirm-form form .contact-submit .contact-back, #contact-modal .warning-message form .contact-submit .contact-back, #delete-modal .contact-form form .contact-submit .contact-back, #delete-modal .delete-form form .contact-submit .contact-back, #delete-modal .contact-confirm-form form .contact-submit .contact-back, #delete-modal .warning-message form .contact-submit .contact-back, #contact-confirm-modal .contact-form form .contact-submit .contact-back, #contact-confirm-modal .delete-form form .contact-submit .contact-back, #contact-confirm-modal .contact-confirm-form form .contact-submit .contact-back, #contact-confirm-modal .warning-message form .contact-submit .contact-back, #warning-modal .contact-form form .contact-submit .contact-back, #warning-modal .delete-form form .contact-submit .contact-back, #warning-modal .contact-confirm-form form .contact-submit .contact-back, #warning-modal .warning-message form .contact-submit .contact-back {
+  display: inline-block;
+  color: #fffffe;
+  padding: 0.5rem 4rem;
+  font-weight: bold;
+  font-size: 18px;
+  background: #014643;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#contact-modal .contact-form form .contact-submit .contact-back:hover, #contact-modal .delete-form form .contact-submit .contact-back:hover, #contact-modal .contact-confirm-form form .contact-submit .contact-back:hover, #contact-modal .warning-message form .contact-submit .contact-back:hover, #delete-modal .contact-form form .contact-submit .contact-back:hover, #delete-modal .delete-form form .contact-submit .contact-back:hover, #delete-modal .contact-confirm-form form .contact-submit .contact-back:hover, #delete-modal .warning-message form .contact-submit .contact-back:hover, #contact-confirm-modal .contact-form form .contact-submit .contact-back:hover, #contact-confirm-modal .delete-form form .contact-submit .contact-back:hover, #contact-confirm-modal .contact-confirm-form form .contact-submit .contact-back:hover, #contact-confirm-modal .warning-message form .contact-submit .contact-back:hover, #warning-modal .contact-form form .contact-submit .contact-back:hover, #warning-modal .delete-form form .contact-submit .contact-back:hover, #warning-modal .contact-confirm-form form .contact-submit .contact-back:hover, #warning-modal .warning-message form .contact-submit .contact-back:hover {
+  background: #0eaa00;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+#contact-modal .contact-form form .contact-submit .contact-back:active, #contact-modal .delete-form form .contact-submit .contact-back:active, #contact-modal .contact-confirm-form form .contact-submit .contact-back:active, #contact-modal .warning-message form .contact-submit .contact-back:active, #delete-modal .contact-form form .contact-submit .contact-back:active, #delete-modal .delete-form form .contact-submit .contact-back:active, #delete-modal .contact-confirm-form form .contact-submit .contact-back:active, #delete-modal .warning-message form .contact-submit .contact-back:active, #contact-confirm-modal .contact-form form .contact-submit .contact-back:active, #contact-confirm-modal .delete-form form .contact-submit .contact-back:active, #contact-confirm-modal .contact-confirm-form form .contact-submit .contact-back:active, #contact-confirm-modal .warning-message form .contact-submit .contact-back:active, #warning-modal .contact-form form .contact-submit .contact-back:active, #warning-modal .delete-form form .contact-submit .contact-back:active, #warning-modal .contact-confirm-form form .contact-submit .contact-back:active, #warning-modal .warning-message form .contact-submit .contact-back:active {
+  background-color: #004d0d;
+}
+
+#contact-modal .contact-form form .contact-submit p, #contact-modal .delete-form form .contact-submit p, #contact-modal .contact-confirm-form form .contact-submit p, #contact-modal .warning-message form .contact-submit p, #delete-modal .contact-form form .contact-submit p, #delete-modal .delete-form form .contact-submit p, #delete-modal .contact-confirm-form form .contact-submit p, #delete-modal .warning-message form .contact-submit p, #contact-confirm-modal .contact-form form .contact-submit p, #contact-confirm-modal .delete-form form .contact-submit p, #contact-confirm-modal .contact-confirm-form form .contact-submit p, #contact-confirm-modal .warning-message form .contact-submit p, #warning-modal .contact-form form .contact-submit p, #warning-modal .delete-form form .contact-submit p, #warning-modal .contact-confirm-form form .contact-submit p, #warning-modal .warning-message form .contact-submit p {
+  font-weight: bold;
+}
+
+#contact-modal .contact-form form #input-container, #contact-modal .delete-form form #input-container, #contact-modal .contact-confirm-form form #input-container, #contact-modal .warning-message form #input-container, #delete-modal .contact-form form #input-container, #delete-modal .delete-form form #input-container, #delete-modal .contact-confirm-form form #input-container, #delete-modal .warning-message form #input-container, #contact-confirm-modal .contact-form form #input-container, #contact-confirm-modal .delete-form form #input-container, #contact-confirm-modal .contact-confirm-form form #input-container, #contact-confirm-modal .warning-message form #input-container, #warning-modal .contact-form form #input-container, #warning-modal .delete-form form #input-container, #warning-modal .contact-confirm-form form #input-container, #warning-modal .warning-message form #input-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+  background-color: #7ab6a4;
+  padding: 0.5rem 1rem;
+}
+
+#contact-modal .contact-form form #input-container #input-message, #contact-modal .delete-form form #input-container #input-message, #contact-modal .contact-confirm-form form #input-container #input-message, #contact-modal .warning-message form #input-container #input-message, #delete-modal .contact-form form #input-container #input-message, #delete-modal .delete-form form #input-container #input-message, #delete-modal .contact-confirm-form form #input-container #input-message, #delete-modal .warning-message form #input-container #input-message, #contact-confirm-modal .contact-form form #input-container #input-message, #contact-confirm-modal .delete-form form #input-container #input-message, #contact-confirm-modal .contact-confirm-form form #input-container #input-message, #contact-confirm-modal .warning-message form #input-container #input-message, #warning-modal .contact-form form #input-container #input-message, #warning-modal .delete-form form #input-container #input-message, #warning-modal .contact-confirm-form form #input-container #input-message, #warning-modal .warning-message form #input-container #input-message {
+  margin: 0;
+}
+
+#contact-modal .contact-form .required-coin, #contact-modal .delete-form .required-coin, #contact-modal .contact-confirm-form .required-coin, #contact-modal .warning-message .required-coin, #delete-modal .contact-form .required-coin, #delete-modal .delete-form .required-coin, #delete-modal .contact-confirm-form .required-coin, #delete-modal .warning-message .required-coin, #contact-confirm-modal .contact-form .required-coin, #contact-confirm-modal .delete-form .required-coin, #contact-confirm-modal .contact-confirm-form .required-coin, #contact-confirm-modal .warning-message .required-coin, #warning-modal .contact-form .required-coin, #warning-modal .delete-form .required-coin, #warning-modal .contact-confirm-form .required-coin, #warning-modal .warning-message .required-coin {
+  text-align: center;
+  display: block;
+}
+
+#contact-modal .contact-form .required-coin .message, #contact-modal .delete-form .required-coin .message, #contact-modal .contact-confirm-form .required-coin .message, #contact-modal .warning-message .required-coin .message, #delete-modal .contact-form .required-coin .message, #delete-modal .delete-form .required-coin .message, #delete-modal .contact-confirm-form .required-coin .message, #delete-modal .warning-message .required-coin .message, #contact-confirm-modal .contact-form .required-coin .message, #contact-confirm-modal .delete-form .required-coin .message, #contact-confirm-modal .contact-confirm-form .required-coin .message, #contact-confirm-modal .warning-message .required-coin .message, #warning-modal .contact-form .required-coin .message, #warning-modal .delete-form .required-coin .message, #warning-modal .contact-confirm-form .required-coin .message, #warning-modal .warning-message .required-coin .message {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #7ab6a4;
+}
+
+#contact-modal .contact-form .required-coin .message p, #contact-modal .delete-form .required-coin .message p, #contact-modal .contact-confirm-form .required-coin .message p, #contact-modal .warning-message .required-coin .message p, #delete-modal .contact-form .required-coin .message p, #delete-modal .delete-form .required-coin .message p, #delete-modal .contact-confirm-form .required-coin .message p, #delete-modal .warning-message .required-coin .message p, #contact-confirm-modal .contact-form .required-coin .message p, #contact-confirm-modal .delete-form .required-coin .message p, #contact-confirm-modal .contact-confirm-form .required-coin .message p, #contact-confirm-modal .warning-message .required-coin .message p, #warning-modal .contact-form .required-coin .message p, #warning-modal .delete-form .required-coin .message p, #warning-modal .contact-confirm-form .required-coin .message p, #warning-modal .warning-message .required-coin .message p {
+  font-weight: bold;
+  font-size: 30px;
+  color: #0f3433;
+  text-align: center;
+  margin: 0;
+}
+
+#contact-modal .contact-form .required-coin .message p span, #contact-modal .delete-form .required-coin .message p span, #contact-modal .contact-confirm-form .required-coin .message p span, #contact-modal .warning-message .required-coin .message p span, #delete-modal .contact-form .required-coin .message p span, #delete-modal .delete-form .required-coin .message p span, #delete-modal .contact-confirm-form .required-coin .message p span, #delete-modal .warning-message .required-coin .message p span, #contact-confirm-modal .contact-form .required-coin .message p span, #contact-confirm-modal .delete-form .required-coin .message p span, #contact-confirm-modal .contact-confirm-form .required-coin .message p span, #contact-confirm-modal .warning-message .required-coin .message p span, #warning-modal .contact-form .required-coin .message p span, #warning-modal .delete-form .required-coin .message p span, #warning-modal .contact-confirm-form .required-coin .message p span, #warning-modal .warning-message .required-coin .message p span {
+  color: #7c9701;
+}
+
+#contact-modal .warning-message .btn, #delete-modal .warning-message .btn, #contact-confirm-modal .warning-message .btn, #warning-modal .warning-message .btn {
+  display: block;
+}
+
+#contact-modal .warning-message .btn .link-btn, #delete-modal .warning-message .btn .link-btn, #contact-confirm-modal .warning-message .btn .link-btn, #warning-modal .warning-message .btn .link-btn {
+  display: block;
+  margin: 0;
+}
+
+.opinions {
+  margin: 75px 0 0 0;
+}
+
+.opinions .main-contents {
+  padding: 0 15px;
+}
+
+.opinions .category-container {
+  padding-left: 0 50px;
+}
+
+.opinions .category-container .category-links {
+  background-color: rgba(232, 228, 230, 0.7);
+  border-radius: 5px;
+  border: 2px solid rgba(2, 122, 48, 0.7);
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 85px;
+  padding: 1rem;
+}
+
+.opinions .category-container .category-links p {
+  padding-left: 1rem;
+}
+
+.opinions .category-container .category-links .major-category-link {
+  color: #0f3433;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.opinions p {
+  margin: 0;
+}
+
+.teach {
+  margin-top: 75px;
+}
+
+.teach .teach-message {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.teach .teach-message h2 {
+  color: #0F3433;
+  margin-bottom: 20px;
+}
+
+.meetings-container, .give_opinions-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.meetings-container h1, .meetings-container h2, .give_opinions-container h1, .give_opinions-container h2 {
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  color: #0f3433;
+}
+
+.meetings-container input::-webkit-input-placeholder, .meetings-container textarea::-webkit-input-placeholder, .give_opinions-container input::-webkit-input-placeholder, .give_opinions-container textarea::-webkit-input-placeholder {
+  color: #c7c7c7;
+}
+
+.meetings-container input:-ms-input-placeholder, .meetings-container textarea:-ms-input-placeholder, .give_opinions-container input:-ms-input-placeholder, .give_opinions-container textarea:-ms-input-placeholder {
+  color: #c7c7c7;
+}
+
+.meetings-container input::-ms-input-placeholder, .meetings-container textarea::-ms-input-placeholder, .give_opinions-container input::-ms-input-placeholder, .give_opinions-container textarea::-ms-input-placeholder {
+  color: #c7c7c7;
+}
+
+.meetings-container input::placeholder, .meetings-container textarea::placeholder, .give_opinions-container input::placeholder, .give_opinions-container textarea::placeholder {
+  color: #c7c7c7;
+}
+
+.meetings-container #assessment, .meetings-container #coin, .give_opinions-container #assessment, .give_opinions-container #coin {
+  width: 4rem;
+  display: inline-block;
+}
+
+.meetings-container #assessment-label, .meetings-container #coin-label, .give_opinions-container #assessment-label, .give_opinions-container #coin-label {
+  display: block;
+}
+
+.meetings-container #category_id, .give_opinions-container #category_id {
+  width: 11rem;
+}
+
+.meetings-container #image-label, .give_opinions-container #image-label {
+  display: block;
+}
+
+.meetings-container #image-label .image-container span, .give_opinions-container #image-label .image-container span {
+  display: inline-block;
+  padding: 0.5rem 4rem;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.meetings-container #image-label .image-container span:hover, .give_opinions-container #image-label .image-container span:hover {
+  background: #0eaa00;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.meetings-container #image-label .image-container span:active, .give_opinions-container #image-label .image-container span:active {
+  background-color: #004d0d;
+}
+
+.meetings-container #image-label .image-container input, .give_opinions-container #image-label .image-container input {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.meetings-container #image-label .image-container input:before, .give_opinions-container #image-label .image-container input:before {
+  content: "添付ファイル：";
+  position: absolute;
+  background-color: white;
+  color: black;
+  width: 128px;
+  height: 30px;
+  line-height: 1.8;
+  text-align: right;
+}
+
+.meetings-container .form-control, .give_opinions-container .form-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.meetings-container .submit-buttom, .give_opinions-container .submit-buttom {
+  text-align: center;
+  display: block;
+  margin: 1rem 2rem 0 2rem;
+}
+
+.meetings-container .submit-buttom button, .give_opinions-container .submit-buttom button {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 0.5rem 4rem;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.meetings-container .submit-buttom button:hover, .give_opinions-container .submit-buttom button:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.meetings-container .submit-buttom button:active, .give_opinions-container .submit-buttom button:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.meetings-container .submit-buttom button:hover, .give_opinions-container .submit-buttom button:hover {
+  background: #e79924;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.meetings-container .submit-buttom button:active, .give_opinions-container .submit-buttom button:active {
+  background-color: #aa7527;
+}
+
+.meetings-container .contact-submit, .give_opinions-container .contact-submit {
+  text-align: center;
+  display: block;
+  margin: 1rem 2rem 0 2rem;
+}
+
+.meetings-container .contact-submit button, .meetings-container .contact-submit div, .give_opinions-container .contact-submit button, .give_opinions-container .contact-submit div {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 0.5rem 4rem;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.meetings-container .contact-submit button:hover, .meetings-container .contact-submit div:hover, .give_opinions-container .contact-submit button:hover, .give_opinions-container .contact-submit div:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.meetings-container .contact-submit button:active, .meetings-container .contact-submit div:active, .give_opinions-container .contact-submit button:active, .give_opinions-container .contact-submit div:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.meetings-container .contact-submit button:hover, .meetings-container .contact-submit div:hover, .give_opinions-container .contact-submit button:hover, .give_opinions-container .contact-submit div:hover {
+  background: #e79924;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.meetings-container .contact-submit button:active, .meetings-container .contact-submit div:active, .give_opinions-container .contact-submit button:active, .give_opinions-container .contact-submit div:active {
+  background-color: #aa7527;
+}
+
+.meetings-container .contact-submit .contact-back, .give_opinions-container .contact-submit .contact-back {
+  display: inline-block;
+  color: #fffffe;
+  padding: 0.5rem 4rem;
+  font-weight: bold;
+  font-size: 18px;
+  background: #014643;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.meetings-container .contact-submit .contact-back:hover, .give_opinions-container .contact-submit .contact-back:hover {
+  background: #0eaa00;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.meetings-container .contact-submit .contact-back:active, .give_opinions-container .contact-submit .contact-back:active {
+  background-color: #004d0d;
+}
+
+.meetings-container .return-btn, .give_opinions-container .return-btn {
+  text-align: center;
+}
+
+.meetings-container .return-btn a, .give_opinions-container .return-btn a {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  display: inline-block;
+  padding: 0.5rem 2rem;
+}
+
+.meetings-container .return-btn a:hover, .give_opinions-container .return-btn a:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.meetings-container .return-btn a:active, .give_opinions-container .return-btn a:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.contact-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 75px;
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #001e1d;
+  font-weight: bold;
+}
+
+.contact-container h3 {
+  text-align: center;
+  color: #001e1d;
+  padding: 1rem 0;
+}
+
+.contact-container .form-group label {
+  font-size: 1.5rem;
+  color: #001e1d;
+}
+
+.contact-container .contact-submit {
+  text-align: center;
+  display: block;
+  margin: 1rem 2rem 0 2rem;
+}
+
+.contact-container .contact-submit button, .contact-container .contact-submit div {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 0.5rem 4rem;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.contact-container .contact-submit button:hover, .contact-container .contact-submit div:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact-container .contact-submit button:active, .contact-container .contact-submit div:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.contact-container .contact-submit button:hover, .contact-container .contact-submit div:hover {
+  background: #e79924;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.contact-container .contact-submit button:active, .contact-container .contact-submit div:active {
+  background-color: #aa7527;
+}
+
+.contact-container .contact-submit .contact-back {
+  display: inline-block;
+  color: #fffffe;
+  padding: 0.5rem 4rem;
+  font-weight: bold;
+  font-size: 18px;
+  background: #014643;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.contact-container .contact-submit .contact-back:hover {
+  background: #0eaa00;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.contact-container .contact-submit .contact-back:active {
+  background-color: #004d0d;
+}
+
+.contact-container .confirm-container {
+  padding: 0 50px;
+  text-align: center;
+}
+
+.contact-container .confirm-container .item-container {
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 1rem;
+  background-color: #8bbfb0;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.contact-container .confirm-container .item-container h4 {
+  display: inline-block;
+}
+
+.contact-container .confirm-container .text-left {
+  text-align: left;
+}
+
+.contact-container .confirm-container .text-left h4 {
+  display: block;
+}
+
+.contact-container .confirm-container .text-left .contact-text-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.contact-container .confirm-container .text-left .contact-text-container p {
+  word-wrap: normal;
+}
+
+.coin-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.coin-container .heading h2, .coin-container .heading p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.coin-container .coin-message {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+  background-color: #8abfb0;
+}
+
+.coin-container .coin-message li {
+  list-style: square inside;
+  padding: 0.5rem 2rem;
+  text-align: left;
+}
+
+.coin-container .coin-balance {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #7ab6a4;
+  padding: 1rem 4rem;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.coin-container .coin-balance p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #0f3433;
+  margin-bottom: 0;
+}
+
+.coin-container .coin-balance p span {
+  font-size: 30px;
+  color: #029b3d;
+}
+
+.coin-container .btn-container .buy-coin-btn, .coin-container .btn-container .return-top-btn {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  display: inline-block;
+  padding: 0.5rem 4rem;
+  font-size: 20px;
+  border: none;
+  outline: 0;
+}
+
+.coin-container .btn-container .buy-coin-btn:hover, .coin-container .btn-container .return-top-btn:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.coin-container .btn-container .buy-coin-btn:active, .coin-container .btn-container .return-top-btn:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.coin-container .coin-confirm-inputs {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  display: inline-block;
+  margin: 2rem 0;
+}
+
+.coin-container .coin-confirm-inputs p {
+  font-size: 25px;
+  margin: 0;
+}
+
+.coin-container .coin-confirm-inputs p span {
+  color: #7c9701;
+  font-weight: bold;
+}
+
+#buy-coin-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+#buy-coin-modal .buy-coin-form {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  border-radius: 5px;
+}
+
+#buy-coin-modal .buy-coin-form .form-heading h2, #buy-coin-modal .buy-coin-form .form-heading p {
+  font-weight: bold;
+  text-align: center;
+}
+
+#buy-coin-modal .buy-coin-form form .form-container {
+  text-align: center;
+}
+
+#buy-coin-modal .buy-coin-form form .form-container .form-group {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  display: inline-block;
+  background-color: #8abfb0;
+  text-align: center;
+}
+
+#buy-coin-modal .buy-coin-form form .form-container .form-group label, #buy-coin-modal .buy-coin-form form .form-container .form-group input, #buy-coin-modal .buy-coin-form form .form-container .form-group span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#buy-coin-modal .buy-coin-form form .form-container .form-group input {
+  width: 4rem;
+  color: #a8ce00;
+}
+
+#buy-coin-modal .buy-coin-form form .contact-submit {
+  text-align: center;
+  display: block;
+  margin: 1rem 2rem 0 2rem;
+}
+
+#buy-coin-modal .buy-coin-form form .contact-submit button, #buy-coin-modal .buy-coin-form form .contact-submit div {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 0.5rem 4rem;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+#buy-coin-modal .buy-coin-form form .contact-submit button:hover, #buy-coin-modal .buy-coin-form form .contact-submit div:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#buy-coin-modal .buy-coin-form form .contact-submit button:active, #buy-coin-modal .buy-coin-form form .contact-submit div:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+#buy-coin-modal .buy-coin-form form .contact-submit button:hover, #buy-coin-modal .buy-coin-form form .contact-submit div:hover {
+  background: #e79924;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+#buy-coin-modal .buy-coin-form form .contact-submit button:active, #buy-coin-modal .buy-coin-form form .contact-submit div:active {
+  background-color: #aa7527;
+}
+
+#buy-coin-modal .buy-coin-form form .contact-submit .contact-back {
+  display: inline-block;
+  color: #fffffe;
+  padding: 0.5rem 4rem;
+  font-weight: bold;
+  font-size: 18px;
+  background: #014643;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#buy-coin-modal .buy-coin-form form .contact-submit .contact-back:hover {
+  background: #0eaa00;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+#buy-coin-modal .buy-coin-form form .contact-submit .contact-back:active {
+  background-color: #004d0d;
+}
+
+.mypage-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.mypage-container .heading h2 {
+  text-align: center;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box, .mypage-container .mypage-contents .col-md-12 .box {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #8abfb0;
+  margin: 20px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .heading h4, .mypage-container .mypage-contents .col-md-12 .box .heading h4 {
+  text-align: center;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details span, .mypage-container .mypage-contents .col-md-12 .box .details span {
+  font-weight: bold;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details .card, .mypage-container .mypage-contents .col-md-12 .box .details .card {
+  text-decoration: none;
+  color: #0F3433;
+  margin: 15px auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details .card:hover, .mypage-container .mypage-contents .col-md-12 .box .details .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details .messages-container, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container {
+  background-color: #e7ddc9;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row {
+  border-radius: 5px;
+  margin: 0;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-2, .mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-8, .mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-1, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-2, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-8, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-1 {
+  border: solid 1px #b8b8b8;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-2 p, .mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-8 p, .mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-1 p, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-2 p, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-8 p, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-1 p {
+  margin: 5px;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-1, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-1 {
+  padding: 0;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-1 .link-btn, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-1 .link-btn {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  margin: 0;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-1 .link-btn:hover, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-1 .link-btn:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-1 .link-btn:active, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-1 .link-btn:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.mypage-container .mypage-contents .posts .details .meetings, .mypage-container .mypage-contents .posts .details .give-opinions {
+  margin: 10px 0;
+}
+
+.mypage-container .mypage-contents .posts .details .meetings .container, .mypage-container .mypage-contents .posts .details .give-opinions .container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mypage-container .mypage-contents .posts .details .meetings .container p, .mypage-container .mypage-contents .posts .details .give-opinions .container p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.mypage-container .mypage-contents .posts .details .meetings .container .btn .link-btn, .mypage-container .mypage-contents .posts .details .give-opinions .container .btn .link-btn {
+  margin: 0;
+}
+
+.dm-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  border-radius: 5px;
+  background-color: #8abfb0;
+}
+
+.dm-container .heading h2, .dm-container .heading p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.dm-container #contact-message .contact-form .form-heading h2, .dm-container #contact-message .contact-form .form-heading p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.dm-container #contact-message .contact-form form .contact-submit {
+  text-align: center;
+  display: block;
+  margin: 1rem 2rem 0 2rem;
+}
+
+.dm-container #contact-message .contact-form form .contact-submit button, .dm-container #contact-message .contact-form form .contact-submit div {
+  border-radius: 10px;
+  background-color: #f9bc60;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 0.5rem 4rem;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.dm-container #contact-message .contact-form form .contact-submit button:hover, .dm-container #contact-message .contact-form form .contact-submit div:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.dm-container #contact-message .contact-form form .contact-submit button:active, .dm-container #contact-message .contact-form form .contact-submit div:active {
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 4px;
+}
+
+.dm-container #contact-message .contact-form form .contact-submit button:hover, .dm-container #contact-message .contact-form form .contact-submit div:hover {
+  background: #e79924;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.dm-container #contact-message .contact-form form .contact-submit button:active, .dm-container #contact-message .contact-form form .contact-submit div:active {
+  background-color: #aa7527;
+}
+
+.dm-container #contact-message .contact-form form .contact-submit .contact-back {
+  display: inline-block;
+  color: #fffffe;
+  padding: 0.5rem 4rem;
+  font-weight: bold;
+  font-size: 18px;
+  background: #014643;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.dm-container #contact-message .contact-form form .contact-submit .contact-back:hover {
+  background: #0eaa00;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.dm-container #contact-message .contact-form form .contact-submit .contact-back:active {
+  background-color: #004d0d;
+}
+
+.dm-container #contact-message .contact-form form #input-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+  background-color: #7ab6a4;
+  padding: 0.5rem 1rem;
+}
+
+.dm-container #contact-message .contact-form form #input-container #input-message {
+  margin: 0;
+}
+
+.dm-container #contact-message .contact-form .required-coin {
+  text-align: center;
+  display: block;
+}
+
+.dm-container #contact-message .contact-form .required-coin .message {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #7ab6a4;
+}
+
+.dm-container #contact-message .contact-form .required-coin .message p {
+  font-weight: bold;
+  font-size: 30px;
+  color: #0f3433;
+  text-align: center;
+  margin: 0;
+}
+
+.dm-container #contact-message .contact-form .required-coin .message p span {
+  color: #7c9701;
+}
+
+.dm-container .contact-description-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+}
+/*# sourceMappingURL=stylesheet.css.map */

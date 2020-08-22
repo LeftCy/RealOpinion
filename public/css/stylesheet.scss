@@ -1,0 +1,1065 @@
+h1, h2, h3, h4, h5 {
+    color: #0f3433;
+    font-weight: bold;
+}
+label {
+    font-weight: bold;
+}
+@mixin btn {
+    border-radius: 10px;
+    background-color: rgba($color: #f9bc60, $alpha: 1.0);
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    opacity: 0.9;
+    font-size: large;
+    transition: 0.5s;
+    font-weight: bold;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    &:hover {
+        opacity: 1;
+        transition: 0.3s;
+    }
+    &:active {
+        opacity: 0.8;
+        transition: 0.1s;
+        box-shadow: none;
+        position: relative;
+        top: 4px;
+    }
+}
+@mixin container {
+    background-color: darken($color: #abd1c6, $amount: 5);
+    margin-top: 75px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    padding: 2rem;
+    border-radius: 10px;
+}
+@mixin contact-submit {
+    text-align: center;
+    display: block;
+    margin: 1rem 2rem 0 2rem;
+    button, div {
+        @include btn();
+        padding: 0.5rem 4rem;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: bold;
+        &:hover {
+            background: rgba($color: #e79924, $alpha: 1.0);
+            transition: 0.5;
+        }
+        &:active {
+            background-color: rgba($color: #aa7527, $alpha: 1.0);
+        }
+    }
+    .contact-back {
+        display: inline-block;
+        color: #fffffe;
+        padding: 0.5rem 4rem;
+        font-weight: bold;
+        font-size: 18px;
+        background: #014643;
+        border-radius: 10px;
+        text-align: center;
+        transition: .3s;
+        cursor:pointer;
+        &:hover {
+            background: rgba($color: #0eaa00, $alpha: 1.0);
+            transition: 0.5;
+        }
+        &:active {
+            background-color: rgba($color: #004d0d, $alpha: 1.0);
+        }
+    }
+}
+body {
+    background-color: rgba($color: #abd1c6, $alpha: 1.0);
+    width: 100%;
+    //footerの固定
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    transition: 0.5s;
+    nav {
+        height: 100%;
+        background-color: rgba($color: #004643, $alpha: 0.9);
+    }
+    .navbar-brand {
+        img {
+            height: 40px;
+        }
+    }
+    .dropdown-menu {
+        background-color: rgba(0, 70, 67, 0.9);
+        a {
+            color: #abd1c6;
+            &:hover {
+                color: #abd1c6;
+                background-color: rgba(0, 70, 67, 0.9);
+            }
+        }
+    }
+    /* navigation */
+    ul.nav li a {
+        text-decoration: none !important;
+        padding: 5px 30px;
+    }
+
+    ul.nav li:not(.active) a:hover { //念のため追記
+        color: #d08047;
+        border-bottom: 4px solid #d08047;
+    }
+
+    ul.nav li.active { //修正
+        color: #d08047;
+        border-bottom: 4px solid #d08047;
+    }
+}
+header.hide {
+    transform: translateY(-100%);
+}
+.background-container {
+	width: 100%;
+	height: 100%;
+	background-position:center center;
+	background-size: cover;
+	align-items: center;
+    justify-content: center;
+    .heading {
+        padding: 150px 0;
+        text-align: center;
+        .jumbotron {
+            background-color: rgba($color: #004643, $alpha: 0.5);
+            border-radius: 30px;
+            h1, h2 {
+                padding-bottom: 25px;
+                color: rgba($color: #fffffe, $alpha: 1.0);
+            }
+            .heading-search-bar {
+                display: inline-block;
+                margin-top: 50px;
+                border: solid 2px #abd1c6;
+                background-color: white;
+                border-radius: 999px;
+                padding: 5px 15px;
+                background-color: rgba($color: #abd1c6, $alpha: 1.0);
+                select {
+                    outline: none;
+                    border-radius: 5px;
+                    float: left;
+                    margin-right: 10px;
+                    height: 30px;
+                    border: none;
+                    background-color: rgba($color: #abd1c6, $alpha: 1.0);
+                    &:hover {
+                        background-color: darken($color: #abd1c6, $amount: 15);
+                        transition: 1s;
+                    }
+                }
+                input {
+                    display: block;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+.service-about {
+    background-color: rgba($color: #ABD1C6, $alpha: 1.0);
+    .container {
+        @include container();
+        .about {
+            width: 100%;
+            .tab-container {
+                padding: 15px 10px;
+                text-align: center;
+                margin: 0 auto;
+                .nav {
+                    .nav-item {
+                        .active {
+                            background-color: #014643;
+                        }
+                        .nav-link {
+                            color: black;
+                        }
+                        .nav-link.active {
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .message {
+                position: relative;
+                text-align: center;
+                img {
+                    width: 250px;
+                    opacity: 0.5;
+                }
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    font-size: 40px;
+                    font-weight: 900;
+                    color: rgba($color: #2c2c2c, $alpha: 1.0);
+                }
+            }
+        }
+    }
+}
+.advertising-parts {
+    .container {
+        @include container();
+        background-color: #014643;
+        text-align: center;
+        .about-servise-container {
+            padding: 30px 0 10px 0;
+        }
+        .about-service-container {
+            padding: 0;
+            .about-service {
+                background-color: #e8e4e6;
+                border-radius: 10px;
+                display: inline-block;
+                text-align: center;
+                margin: 10px;
+                .feature {
+                    padding: 10px 0;
+                    color: rgba($color: #585858, $alpha: 1.0);
+                    font-size: 20px;
+                }
+                
+            }
+        }
+        .link-btn-container {
+            width: 40%;
+            text-align: center;
+            a {
+                margin: 0;
+            }
+        }
+    }
+}
+//CSS for btn
+.btn {
+    .link-btn {
+        @include btn();
+    }
+}
+.hear-opinion, .give-opinion {
+    background-color: #ABD1C6;
+    @include container();
+    border-radius: 8px;
+    text-align: center;
+    padding: 32px 0;
+    .card-columns, .card-deck {
+        margin: 15px;
+        a {
+            transition: 0.5s;
+            &:hover {
+                filter: brightness(97.5%);
+                transition: 0.5s;
+                transform: scale(1.05);
+                z-index: 5;
+            }
+            text-decoration: none;
+            color: #2c2c2c;
+        }
+        p {
+            text-align: left;
+        }
+        .fadein-up {
+            opacity : 0;
+            transform : translate(0, 100px);
+            transition : all 1s;
+          }
+           
+          .fade-up.active{
+            opacity : 1;
+            transform : translate(0, 0);
+          }
+    }
+    .card-deck {
+        margin: 0;
+    }
+    .paginate {
+        text-align: center;
+        .paginate-center {
+            display: inline-block;
+
+        }
+    }
+}
+.give-opinion {
+    background-color: #014643;
+    color: #e8e4e6;
+    h2 {
+        color: #ABD1C6;
+    }
+}
+footer {
+    background-position:center center;
+	background-size: cover;
+	align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba($color: #3a2df7, $alpha: 1.0);
+    height: 250px;
+    //footerの固定
+    margin-top: auto;
+    .footer-logo {
+        a {
+            img {
+                height: 150px;
+                width: 150px;
+                float: left;
+                position: absolute;
+                top: 50px;
+                left: 50px;
+            }
+        }
+    }
+    .footer-right {
+        position: absolute;
+        top: 39px;
+        right: 39px;
+        .footer-list {
+            a {
+                padding: 10px 20px;
+                display: block;
+                text-decoration: none;
+                color: black;
+                background-color: rgba($color: #e8e4e6, $alpha: 1.0);
+                border-radius: 10px;
+                margin: 10px;
+                opacity: 0.8;
+                transition: 0.5s;
+                &:hover {
+                    opacity: 1.0;
+                    transition: 0.5s;
+                }
+                &:active {
+                    background-color: rgba($color: #505050, $alpha: 0.8);
+                    transition: 0.1s;
+                }
+            }
+        }
+    }
+}
+
+//for about-page
+.service-description {
+    background-color: #abd1c6;
+    text-align: center;
+    margin-top: 75px;
+    .how-service, .what-coin {
+        @include container();
+        width: 100%;
+        padding: 15px;
+        color: #001e1d;
+        h1 {
+            margin-bottom: 1rem;
+        }
+        .link-btn {
+            text-align: center;
+            display: block;
+            a {
+                @include btn();
+                display: inline-block;
+            }
+        }
+    }
+    .flow-of-use {
+        @include container();
+        width: 100%;
+        padding: 15px;
+        color: #001e1d;
+        h1 {
+            margin-bottom: 1rem;
+        }
+        .description-figure {
+            text-align: center;
+            .case-give-opinion, .case-hear-opinion {
+                @include container();
+                margin: 0;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+//form auth-page
+.auth {
+    margin: 30px 0;
+}
+
+//for login-gage
+.login-form {
+    margin: 50px 0;
+}
+
+//for verify-page
+.verify-container {
+    @include container();
+    border-radius: 10px;
+    h2 {
+        padding: 1rem 0;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    div {
+        text-align: center;
+        a {
+            @include btn();
+            margin: 0 5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+//for show-page
+.meeting-show, .give-opinion-show {
+    margin-top: 75px;
+    .show {
+        background-color: #004643;
+        border-radius: 5px;
+        padding: 2.5rem;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+        span {
+            color: #abd1c6;
+        }
+        .category-link {
+            a {
+                text-decoration: none;
+                color: rgba($color: #3bc8f3, $alpha: 0.8);
+                &:hover {
+                    color: rgba($color: #3bc8f3, $alpha: 0.5);
+                }
+            }
+        }
+        .title-box {
+            h1 {
+                color: #fffffe;
+                font-size: 32px;
+            }
+        }
+        .image-box {
+            text-align: center;
+            img {
+                display: inline-block;
+                height: auto;
+                width: 100%;
+                padding: 30px;
+            }
+        }
+        .assessment-box, .contributor-box {
+            color: #abd1c6;
+            p {
+                margin: 0;
+            }
+        }
+        .contributor-box {
+            margin-bottom: 15px;
+        }
+        .discription-message {
+            margin-bottom: 75px;
+            h3 {
+                font-size: 20px;
+                color: #abd1c6;
+            }
+            .detail-description {
+                border-radius: 5px;
+                background-color: rgba($color: #e8e4e6, $alpha: 1.0);
+                color: #0f3433;
+                p {
+                    padding: 1rem ;
+                    word-break: break-all;
+                }
+            }
+        }
+        .message-contents {
+            position: relative;
+            .contact-btn {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                text-align: center;
+                .contact-link-btn, .edit-link-btn, .delete-btn {
+                    @include btn();
+                    display: inline-block;
+                    padding: 0.5rem 2rem;
+                    margin:0;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                .delete-btn {
+                    background-color: rgba($color: #d16262, $alpha: 1.0);
+                }
+                
+            }
+        }
+    }
+}
+
+//for contact-modal & delete-modal
+#contact-modal, #delete-modal, #contact-confirm-modal, #warning-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    .contact-form, .delete-form, .contact-confirm-form, .warning-message {
+        @include container();
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+        border-radius: 5px;
+        .form-heading, .warning-heading {
+            h2, p {
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+
+        .have-coin-container {
+            text-align: center;
+        }
+
+        form {
+            .contact-submit {
+                @include contact-submit();
+                p {
+                    font-weight: bold;
+                }
+            }
+            #input-container {
+                @include container();
+                margin: 0;
+                background-color: darken($color: #abd1c6, $amount: 15);
+                padding: 0.5rem 1rem;
+                #input-message {
+                    margin: 0;
+                }
+            }
+        }
+        .required-coin {
+            text-align: center;
+            display: block;
+            .message {
+                @include container();
+                margin: 0;
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                background-color: darken($color: #abd1c6, $amount: 15);
+                p {
+                    font-weight: bold;
+                    font-size: 30px;
+                    color: #0f3433;
+                    text-align: center;
+                    margin: 0;
+                    span {
+                        color: rgba($color: #7c9701, $alpha: 1.0);
+                    }
+                }
+            }
+        }
+    }
+    .warning-message {
+        .btn {
+            display: block;
+            .link-btn {
+                display: block;
+                margin: 0;
+            }
+        }
+    }
+}
+
+//for category-page
+.opinions {
+    margin: 75px 0 0 0;
+    .main-contents {
+        padding: 0 15px;
+        
+    }
+    .category-container {
+        padding-left: 0 50px;
+        .category-links {
+            background-color: rgba($color: #e8e4e6, $alpha: 0.7);
+            border-radius: 5px;
+            border: 2px solid rgba($color: #027a30, $alpha: 0.7);
+            margin: 0;
+
+            position: -webkit-sticky;
+            position: sticky;
+            top: 85px;
+            padding: 1rem;
+
+            p {
+                padding-left: 1rem;
+            }
+            .major-category-link {
+                color: #0f3433;
+                font-size: 28px;
+                font-weight: bold;
+            }
+        }
+    }
+    p {
+        margin: 0;
+    }
+}
+
+//for teach-page
+.teach {
+    margin-top: 75px;
+    .teach-message {
+        @include container();
+        text-align: center;
+        h2 {
+            color: #0F3433;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+//for meetings&give_opinions-page
+.meetings-container, .give_opinions-container {
+    @include container();
+    h1, h2 {
+        text-align: center;
+        padding: 1rem;
+        font-weight: bold;
+        color: #0f3433;
+    }
+    input::placeholder, textarea::placeholder {
+        color: rgba($color: #c7c7c7, $alpha: 1.0);
+    }
+    #assessment, #coin {
+        width: 4rem;
+        display: inline-block;
+    }
+    #assessment-label, #coin-label {
+        display: block;
+    }
+    #category_id {
+        width: 11rem;
+    }
+    #image-label {
+        display: block;
+        .image-container {
+            span {
+                display: inline-block;
+                //color: #fffffe;
+                padding: 0.5rem 4rem;
+                font-weight: bold;
+                font-size: 18px;
+                //background: #014643;
+                background-color: white;
+                border-radius: 10px;
+                text-align: center;
+                transition: .3s;
+                cursor:pointer;
+            }
+            span:hover {
+                background: rgba($color: #0eaa00, $alpha: 1.0);
+                transition: 0.5;
+            }
+            span:active {
+                background-color: rgba($color: #004d0d, $alpha: 1.0);
+            }
+            input {
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                top: 0;
+                left: 0;
+                &:before {
+                    content: "添付ファイル：";
+                    position: absolute;
+                    //background: #014643;
+                    background-color: white;
+                    color: black;
+                    width: 128px;
+                    height: 30px;
+                    line-height: 1.8;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .form-control {
+        //color: #fffffe;
+        //background-color: #004643;
+        box-shadow: none;
+        outline: none;
+    }
+    .submit-buttom {
+        text-align: center;
+        display: block;
+        margin: 1rem 2rem 0 2rem;
+        button {
+            @include btn();
+            padding: 0.5rem 4rem;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: bold;
+            &:hover {
+                background: rgba($color: #e79924, $alpha: 1.0);
+                transition: 0.5;
+            }
+            &:active {
+                background-color: rgba($color: #aa7527, $alpha: 1.0);
+            }
+        }
+    }
+    .contact-submit {
+        @include contact-submit();
+    }
+    //for deleted-page
+    .return-btn {
+        text-align: center;
+        a {
+            @include btn();
+            display: inline-block;
+            padding: 0.5rem 2rem;
+        }
+    }
+}
+
+//for contact-page
+.contact-container {
+    @include container();
+    margin-top: 75px;
+    h2 {
+        text-align: center;
+        color: #001e1d;
+        font-weight: bold;
+    }
+    h3 {
+        text-align: center;
+        color: #001e1d;
+        padding: 1rem 0;
+    }
+    .form-group {
+        label {
+            font-size: 1.5rem;
+            color: #001e1d;
+        }
+    }
+    .contact-submit {
+        @include contact-submit();
+    }
+    .confirm-container {
+        padding: 0 50px;
+        text-align: center;
+        .item-container {
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+            padding: 1rem;
+            background-color: darken($color: #9BC8BB, $amount: 5);
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            h4 {
+                display: inline-block;
+            }
+        }
+        .text-left {
+            text-align: left;
+            h4 {
+                display: block;
+            }
+            .contact-text-container {
+                @include container();
+                margin: 0;
+                p {
+                    word-wrap: normal;
+                }
+            }
+        }
+    }
+}
+
+//for coin-page
+.coin-container {
+    @include container();
+    text-align: center;
+    .heading {
+        h2, p {
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+    .coin-message {
+        @include container();
+        margin: 0;
+        background-color: darken($color: #abd1c6, $amount: 10);
+        li {
+            list-style: square inside;
+            padding: 0.5rem 2rem;
+            text-align: left;
+        }
+    }
+    .coin-balance {
+        @include container();
+        background-color: darken($color: #abd1c6, $amount: 15);
+        padding: 1rem 4rem;
+        display: inline-block;
+        margin-top: 0;
+        p {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: #0f3433;
+            margin-bottom: 0;
+            span {
+                font-size: 30px;
+                color: rgba($color: #029b3d, $alpha: 1.0);
+            }
+        }
+    }
+    .btn-container {
+        .buy-coin-btn, .return-top-btn {
+            @include btn();
+            display: inline-block;
+            padding: 0.5rem 4rem;
+            font-size: 20px;
+            border: none;
+            outline: 0;
+        }
+    }
+    .coin-confirm-inputs {
+        @include container();
+        padding: 1rem 3rem;
+        display: inline-block;
+        margin: 2rem 0;
+        p {
+            font-size: 25px;
+            margin: 0;
+            span {
+                color: rgba($color: #7c9701, $alpha: 1.0);
+                font-weight: bold;
+            }
+        }
+    }
+}
+#buy-coin-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    .buy-coin-form {
+        @include container();
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+        border-radius: 5px;
+        .form-heading {
+            h2, p {
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        form {
+            .form-container {
+                text-align: center;
+                .form-group {
+                    @include container();
+                    margin: 0.5rem 0;
+                    display: inline-block;
+                    background-color: darken($color: #abd1c6, $amount: 10);
+                    text-align: center;
+                    label, input, span {
+                        display: inline-block;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                    input {
+                        width: 4rem;
+                        color: rgba($color: #a8ce00, $alpha: 1.0);
+                    }
+                }
+            }
+            
+            .contact-submit {
+                @include contact-submit();
+            }
+        }
+    }
+}
+
+//for my-page
+.mypage-container {
+    @include container();
+    .heading {
+        h2 {
+            text-align: center;
+        }
+    }
+    .mypage-contents {
+        .col-md-6, .col-md-12 {
+            .box {
+                @include container();
+                background-color: darken($color: #abd1c6, $amount: 10);
+                margin: 20px;
+                text-align: center;
+                padding: 1rem;
+                .heading {
+                    h4 {
+                        text-align: center;
+                    }
+                }
+                .details {
+                    span {
+                        font-weight: bold;
+                    }
+
+                    .card {
+                        text-decoration: none;
+                        color: #0F3433;
+                        margin: 15px auto;
+                        transition: 0.5s;
+                        &:hover {
+                            transform: scale(1.05);
+                            z-index: 5;
+                            transition: 0.5s;
+                        }
+                    }
+                    .messages-container {
+                        background-color: rgb(231, 221, 201);
+                        border-radius: 5px;
+                        padding: 5px;
+                        .row {
+                            border-radius: 5px;
+                            margin: 0;
+                            .col-2, .col-8, .col-1 {
+                                border: solid 1px rgba($color: #b8b8b8, $alpha: 1.0);
+                                p {
+                                    margin: 5px;
+                                }
+                            }
+                            .col-1 {
+                                padding: 0;
+                                .link-btn {
+                                    @include btn();
+                                    border-radius: 5px;
+                                    width: 100%;
+                                    height: 100%;
+                                    padding: 5px;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .posts {
+            .details {
+                .meetings, .give-opinions {
+                    margin: 10px 0;
+                    .container {
+                        @include container();
+                        margin: 0;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        p {
+                            font-weight: bold;
+                            margin: 0;
+                        }
+                        .btn {
+                            .link-btn {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//for dm-page
+.dm-container {
+    @include container();
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    border-radius: 5px;
+    background-color: darken($color: #abd1c6, $amount: 10);
+    .heading {
+        h2, p {
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+    #contact-message {
+        .contact-form {
+            .form-heading {
+                h2, p {
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+            form {
+                .contact-submit {
+                    @include contact-submit();
+                }
+                #input-container {
+                    @include container();
+                    margin: 0;
+                    background-color: darken($color: #abd1c6, $amount: 15);
+                    padding: 0.5rem 1rem;
+                    #input-message {
+                        margin: 0;
+                    }
+                }
+            }
+            .required-coin {
+                text-align: center;
+                display: block;
+                .message {
+                    @include container();
+                    margin: 0;
+                    display: inline-block;
+                    padding: 0.5rem 1rem;
+                    background-color: darken($color: #abd1c6, $amount: 15);
+                    p {
+                        font-weight: bold;
+                        font-size: 30px;
+                        color: #0f3433;
+                        text-align: center;
+                        margin: 0;
+                        span {
+                            color: rgba($color: #7c9701, $alpha: 1.0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-description-container {
+        @include container();
+        margin: 0;
+    }
+}
