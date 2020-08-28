@@ -7,11 +7,11 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
-classController extends Controller
+class LoginController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
-    | Controller
+    | Login Controller
     |--------------------------------------------------------------------------
     |
     | This controller handles authenticating users for the application and
@@ -23,7 +23,7 @@ classController extends Controller
     use AuthenticatesUsers;
 
     /**
-     * Where to redirect users after.
+     * Where to redirect users after login.
      *
      * @var string
      */
