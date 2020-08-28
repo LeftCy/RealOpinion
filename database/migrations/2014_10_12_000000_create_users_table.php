@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();//2つフィールドができる
             $table->integer('coin')->default(0);
+            $table->integer('assessment')->default(3);
         });
     }
 

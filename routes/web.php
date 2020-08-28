@@ -76,3 +76,5 @@ Route::get('message/confirm', 'BoardsController@confirm')->name('message.confirm
 //for dm-page
 Route::get('dm', 'DMController@index')->name('dm');
 Route::post('dm/thanks', 'DMController@send')->name('dm.send');
+Route::get('dm/give', 'DMController@give')->name('dm.give');
+Route::get('dm/giveSend', 'DMController@giveSend')->name('dm.giveSend');

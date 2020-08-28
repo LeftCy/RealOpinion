@@ -16,7 +16,7 @@ $description = 'メッセージ';
             <p>{{ $user_name }}　さん</p>
             <h5>送信内容</h5>
             <p>{{ $input_message }}</p>
-            <h5>消費コイン</h5>
+            <h5>獲得コイン</h5>
             <p>{{ $required_coin }}</p>
             
         </div>

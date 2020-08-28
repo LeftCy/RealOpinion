@@ -13,15 +13,6 @@ use App\User;
 
 class MeetingController extends Controller
 {
-    /*
-    //認証が必要なページでログインしていなければ認証ページに飛ばす
-    public function __construct()
-    {
-        //$this->middleware(['auth','verified']);
-        $this->middleware('verified');
-    }
-    */
-
     /**
      * Display a listing of the resource.
      *
@@ -42,8 +33,10 @@ class MeetingController extends Controller
     public function create()
     {
         $categories = Category::all();
+        $user = Auth::user();
+        $user_assessment = $user->assessment;
 
-        return view('meetings.create', compact('categories'));
+        return view('meetings.create', compact('categories', 'user_assessment'));
     }
 
     /**
@@ -118,21 +111,6 @@ class MeetingController extends Controller
      */
     public function update(Request $request, meeting $meeting)
     {
-        /*
-        $meeting->name = $request->input('name');
-        $meeting->description = $request->input('description');
-        $meeting->assessment = $request->input('assessment');
-        $meeting->coin = $request->input('coin');
-        $meeting->category_id = $request->input('category_id');
-        //_拡張子を限定しないもの
-        $file_ex = $request->file('image')->getClientOriginalExtension();
-        //別環境でも参照できる様にシンボリックリンクを相対パスで作成すること
-        $meeting->image = $request->image->storeAs('public/meeting_images', Auth::id() .'.'.$file_ex);
-        $meeting->update();
-
-        return redirect()->route('meetings.show', $meeting->id);
-        */
-
         $meeting = new Meeting();
         $meeting->name = $request->input('name');
         $meeting->description = $request->input('description');

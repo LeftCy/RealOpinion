@@ -12,15 +12,6 @@ use Illuminate\Support\Facades\Storage;
 
 class GiveOpinionController extends Controller
 {
-    /*
-    //認証が必要なページでログインしていなければ認証ページに飛ばす
-    public function __construct()
-    {
-        //$this->middleware(['auth','verified']);
-        $this->middleware('verified');
-    }
-    */
-
     /**
      * Display a listing of the resource.
      *
@@ -41,8 +32,14 @@ class GiveOpinionController extends Controller
     public function create()
     {
         $categories = Category::all();
+        $user = Auth::user();
+        $user_assessment = $user->assessment;
 
-        return view('give_opinions.create', compact('categories'));
+        //ログイン中のユーザーが保有しているコイン数
+        $my_user = Auth::user();
+        $my_user_coin = $my_user->coin;
+
+        return view('give_opinions.create', compact('categories', 'user_assessment', 'my_user_coin'));
     }
 
     /**
@@ -65,6 +62,10 @@ class GiveOpinionController extends Controller
         $give_opinions->user_id = Auth::id();
 
         $give_opinions->save();
+
+        $my_user = Auth::user();
+        $my_user->coin = $request->input('coin');
+        $my_user->save();
 
         return redirect()->route('give_opinions.show',  $give_opinions->id);
     }
@@ -105,21 +106,6 @@ class GiveOpinionController extends Controller
      */
     public function update(Request $request, GiveOpinion $giveOpinion)
     {
-        /*
-        $giveOpinion->name = $request->input('name');
-        $giveOpinion->description = $request->input('description');
-        $giveOpinion->assessment = $request->input('assessment');
-        $giveOpinion->coin = $request->input('coin');
-        $giveOpinion->category_id = $request->input('category_id');
-        //_拡張子の判別
-        $file_ex = $request->file('image')->getClientOriginalExtension();
-        //別環境でも参照できる様にシンボリックリンクを相対パスで作成すること
-        $giveOpinion->image = $request->image->storeAs('public/meeting_images', Auth::id() .'.'.$file_ex);
-        $giveOpinion->update();
-
-        return redirect()->route('give_opinions.show', ['id' => $giveOpinion->id]);
-        */
-
         $give_opinions = new GiveOpinion();
         $give_opinions->name = $request->input('name');
         $give_opinions->description = $request->input('description');

@@ -7,7 +7,7 @@ $description = '新規登録';
 
 @section('content')
     <div class="give_opinions-container container">
-        <h1>新規登録(教わる)</h1>
+        <h1>教えてくれる人を募集する</h1>
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -22,7 +22,7 @@ $description = '新規登録';
                 {{ session('success') }}
             </div>
         @endif
-        <form method="POST" action="/give_opinions" enctype="multipart/form-data">
+        <form method="POST" action="/give_opinions" enctype="multipart/form-data" onsubmit="return check();">
             {{ csrf_field() }}
             <div class="row">
                 <div class="form-group col-sm-12">
@@ -53,15 +53,9 @@ $description = '新規登録';
 
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <label id="assessment-label" for="assessment">評価</label>
-                    <input class="form-control" id="assessment" type="number" name="assessment" required min="0" placeholder="0">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group col-sm-12">
-                    <label id="coin-label" for="coin">差し上げるコイン</label>
-                    <input class="form-control" id="coin" type="number" name="coin" required min="0" max="10" placeholder="0">
+                    <label id="coin-label" for="coin">差し上げるコイン（自分が持っているコイン数が限度）</label>
+                    <label for="coin">保有コイン数：<span>{{ $my_user_coin }}</span>枚</label><br>
+                    <input class="form-control" id="coin" type="number" name="coin" required min="0" max="{{ $my_user_coin }}" placeholder="0">
                     枚
                 </div>
             </div>            
@@ -82,10 +76,17 @@ $description = '新規登録';
                 </div>
             </div>
 
+            <input id="assessment" type="hidden" name="assessment" value="{{ $user_assessment }}">
+
             <div class="submit-buttom row">
-                <button type="submit" class="btn col-sm-6 align-self-center">作成</button>
+                <button type="submit" class="btn col-sm-6 align-self-center">募集する</button>
             </div>
         </form>
     </div>
+
+    <script>
+        var my_user_coin = <?php echo json_encode($my_user_coin); ?>;
+        
+    </script>
 @endsection
 

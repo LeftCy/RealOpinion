@@ -165,7 +165,6 @@ $description = 'トップページ';
                                 <p>評価の値が不正です</p>
                         @endswitch
                         <p class="card-text">コイン: {{$give_opinion->coin}}枚</p>
-                        <!--  -->
                         <p class="card-text">カテゴリ:{{$give_opinion->category->name}}</p>
                     </div>
                     <div class="card-footer">

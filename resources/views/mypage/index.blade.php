@@ -19,6 +19,28 @@ $description = 'マイページ';
                     <div class="details">
                         <p><span>名前：</span>{{$user->name}}</p>
                         <p><span>メールアドレス：</span>{{$user->email}}</p>
+                        <p>
+                            <span>平均評価：</span>
+                            @switch($user->assessment)
+                                @case (1)
+                                    {{ '⭐️' }}
+                                    @break
+                                @case (2)
+                                    {{ '⭐️⭐️' }}
+                                    @break
+                                @case (3)
+                                    {{ '⭐️⭐️⭐️' }}
+                                    @break
+                                @case (4)
+                                    {{ '⭐️⭐️⭐️⭐️' }}
+                                    @break
+                                @case (5)
+                                    {{ '⭐️⭐️⭐️⭐️⭐️' }}
+                                    @break
+                                @default
+                                    評価の値が不正です
+                            @endswitch
+                        </p>
                         <p><span>登録日：</span>{{$user->created_at}}</p>
                     </div>
                 </div>

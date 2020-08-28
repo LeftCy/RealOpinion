@@ -56,7 +56,14 @@ $description = 'GiveOpinion';
                         <a class="edit-link-btn" href="{{ route('give_opinions.edit', $giveOpinion) }}">この投稿を編集する</a>
                         <div class="delete-btn">この投稿を削除する</div>
                     @else
-                        <div class="contact-link-btn">今すぐ相談に乗る！</div>
+                        <form action="{{ route('dm.give') }}" method="get">
+                            <input type="hidden" value="{{ $giveOpinion->user_id }}" name="user">
+                            <input type="hidden" value="meetings" name="opinion_type">
+                            <input type="hidden" value="{{ $giveOpinion->id }}" name="opinion_id">
+                            <input type="hidden" value="{{ $giveOpinion->coin }}" name="coin">
+                            <button type="submit" class="btn contact-link-btn">いますぐ連絡する！</button>
+                        </form>
+                        <!-- <div class="contact-link-btn">今すぐ相談に乗る！</div> -->
                     @endif
                 </div>
             </div>
@@ -94,7 +101,6 @@ $description = 'GiveOpinion';
         <div class="form-heading">
             <h2>削除</h2>
             <p>本当に削除しますか？</p>
-            <p>{{ $giveOpinion['id'] }}</p>
         </div>
         <!--
         

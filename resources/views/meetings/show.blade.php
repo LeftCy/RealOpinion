@@ -61,7 +61,7 @@ $description = 'meetings';
                         <a class="edit-link-btn" href="{{ route('meetings.edit', $meeting) }}">この投稿を編集する</a>
                         <div class="delete-btn">この投稿を削除する</div>
                     @else
-                    <form action="{{ route('dm') }}" method="get">
+                        <form action="{{ route('dm') }}" method="get">
                             <input type="hidden" value="{{ $meeting->user_id }}" name="user">
                             <input type="hidden" value="meetings" name="opinion_type">
                             <input type="hidden" value="{{ $meeting->id }}" name="opinion_id">

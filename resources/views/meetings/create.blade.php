@@ -7,7 +7,7 @@ $description = '新規登録';
 
 @section('content')
     <div class="meetings-container container">
-        <h1>新規登録(教える)</h1>
+        <h1>教えたいことを投稿する</h1>
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -53,13 +53,6 @@ $description = '新規登録';
 
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <label id="assessment-label" for="assessment">評価</label>
-                    <input class="form-control" id="assessment" type="number" name="assessment" required min="0" placeholder="0">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group col-sm-12">
                     <label id="coin-label" for="coin">コイン</label>
                     <input class="form-control" id="coin" type="number" name="coin" required min="0" max="10" placeholder="0">
                     枚
@@ -82,8 +75,10 @@ $description = '新規登録';
                 </div>
             </div>
 
+            <input id="assessment" type="hidden" name="assessment" value="{{ $user_assessment }}">
+
             <div class="submit-buttom row">
-                <button type="submit" class="btn col-sm-6 align-self-center">作成</button>
+                <button type="submit" class="btn col-sm-6 align-self-center">投稿する</button>
             </div>
         </form>
     </div>
