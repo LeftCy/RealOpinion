@@ -21,6 +21,7 @@ class UsersTableSeeder extends Seeder
             'password' => Hash::make('password'), //password」でログインできる
             'remember_token' => chr(mt_rand(97, 122)).chr(mt_rand(97, 122)).chr(mt_rand(97, 122)),
             'icon' => null,
+            'coin' => 10,
         ]);
 
         //100件のテストユーザーを登録する 
