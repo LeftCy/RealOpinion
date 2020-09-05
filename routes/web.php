@@ -71,10 +71,10 @@ Route::get('mypage', 'MyPageController@index')->name('mypage');
 //メッセージテスト
 Route::get('message', 'BoardsController@index')->name('message.index');
 Route::get('message/message', 'BoardsController@show')->name('message.message');
-Route::get('message/confirm', 'BoardsController@confirm')->name('message.confirm');
+Route::post('message/confirm', 'BoardsController@confirm')->name('message.confirm');
 
 //for dm-page
 Route::get('dm', 'DMController@index')->name('dm');
 Route::post('dm/thanks', 'DMController@send')->name('dm.send');
 Route::get('dm/give', 'DMController@give')->name('dm.give');
-Route::get('dm/giveSend', 'DMController@giveSend')->name('dm.giveSend');
+Route::post('dm/giveSend', 'DMController@giveSend')->name('dm.giveSend');

@@ -37,8 +37,16 @@ class BoardsController extends Controller
         return redirect()->action('BoardsController@index', compact('board'));
     }
     
-    public function confirm()
+    public function confirm(Request $request)
     {
-        return view('message.confirm'); 
+        $message_id = $request->id;
+        $s_name = $request->name;
+        $user = Auth::user();
+        $r_name = $user->name;
+        $msg = $request->msg;
+        $created_at = $request->created_at;
+        $sender_user_id = $request->sender_user_id;
+
+        return view('message.confirm', compact('message_id','s_name','r_name', 'msg', 'created_at', 'sender_user_id')); 
     }
 }

@@ -93,7 +93,9 @@ $description = 'マイページ';
                                             <a class="link-btn" href="#">返信</a>
                                         </div>
                                         <div class="col-1">
-                                            <form action="{{ route('message.confirm') }}" method="get">
+                                            <form action="{{ route('message.confirm') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" value="{{ $message->id }}" name="id">
                                                 <input type="hidden" value="{{ $message->name }}" name="name">
                                                 <input type="hidden" value="{{ $message->msg }}" name="msg">
                                                 <input type="hidden" value="{{ $message->created_at }}" name="created_at">

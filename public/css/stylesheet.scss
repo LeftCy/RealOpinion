@@ -14,14 +14,14 @@ label {
     text-align: center;
     text-decoration: none;
     color: black;
-    opacity: 0.9;
+    opacity: 0.85;
     font-size: large;
     transition: 0.5s;
     font-weight: bold;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
     &:hover {
         opacity: 1;
-        transition: 0.3s;
+        transition: 0.5s;
     }
     &:active {
         opacity: 0.8;
@@ -998,6 +998,37 @@ footer {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+//for messages-container
+.message-container {
+    @include container();
+    .heading {
+        h2 {
+            text-align: center;
+        }
+    }
+    .message {
+        @include container();
+        background-color: darken($color: #abd1c6, $amount: 10);
+        margin: 30px 0;
+    }
+    .btn {
+        display: block;
+        .link-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+        }
+        .left {
+            margin-right: 50px;
+        }
+        form {
+            display: inline-block;
+            button {
+                margin: 0;
             }
         }
     }

@@ -242,7 +242,7 @@ header.hide {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -253,8 +253,8 @@ header.hide {
 
 .btn .link-btn:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .btn .link-btn:active {
@@ -433,7 +433,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -445,8 +445,8 @@ footer .footer-right .footer-list a:active {
 
 .service-description .how-service .link-btn a:hover, .service-description .what-coin .link-btn a:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .service-description .how-service .link-btn a:active, .service-description .what-coin .link-btn a:active {
@@ -533,7 +533,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -546,8 +546,8 @@ footer .footer-right .footer-list a:active {
 
 .verify-container div a:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .verify-container div a:active {
@@ -655,7 +655,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -671,8 +671,8 @@ footer .footer-right .footer-list a:active {
 
 .meeting-show .show .message-contents .contact-btn .contact-link-btn:hover, .meeting-show .show .message-contents .contact-btn .edit-link-btn:hover, .meeting-show .show .message-contents .contact-btn .delete-btn:hover, .give-opinion-show .show .message-contents .contact-btn .contact-link-btn:hover, .give-opinion-show .show .message-contents .contact-btn .edit-link-btn:hover, .give-opinion-show .show .message-contents .contact-btn .delete-btn:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .meeting-show .show .message-contents .contact-btn .contact-link-btn:active, .meeting-show .show .message-contents .contact-btn .edit-link-btn:active, .meeting-show .show .message-contents .contact-btn .delete-btn:active, .give-opinion-show .show .message-contents .contact-btn .contact-link-btn:active, .give-opinion-show .show .message-contents .contact-btn .edit-link-btn:active, .give-opinion-show .show .message-contents .contact-btn .delete-btn:active {
@@ -736,7 +736,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -752,8 +752,8 @@ footer .footer-right .footer-list a:active {
 
 #contact-modal .contact-form form .contact-submit button:hover, #contact-modal .contact-form form .contact-submit div:hover, #contact-modal .delete-form form .contact-submit button:hover, #contact-modal .delete-form form .contact-submit div:hover, #contact-modal .contact-confirm-form form .contact-submit button:hover, #contact-modal .contact-confirm-form form .contact-submit div:hover, #contact-modal .warning-message form .contact-submit button:hover, #contact-modal .warning-message form .contact-submit div:hover, #delete-modal .contact-form form .contact-submit button:hover, #delete-modal .contact-form form .contact-submit div:hover, #delete-modal .delete-form form .contact-submit button:hover, #delete-modal .delete-form form .contact-submit div:hover, #delete-modal .contact-confirm-form form .contact-submit button:hover, #delete-modal .contact-confirm-form form .contact-submit div:hover, #delete-modal .warning-message form .contact-submit button:hover, #delete-modal .warning-message form .contact-submit div:hover, #contact-confirm-modal .contact-form form .contact-submit button:hover, #contact-confirm-modal .contact-form form .contact-submit div:hover, #contact-confirm-modal .delete-form form .contact-submit button:hover, #contact-confirm-modal .delete-form form .contact-submit div:hover, #contact-confirm-modal .contact-confirm-form form .contact-submit button:hover, #contact-confirm-modal .contact-confirm-form form .contact-submit div:hover, #contact-confirm-modal .warning-message form .contact-submit button:hover, #contact-confirm-modal .warning-message form .contact-submit div:hover, #warning-modal .contact-form form .contact-submit button:hover, #warning-modal .contact-form form .contact-submit div:hover, #warning-modal .delete-form form .contact-submit button:hover, #warning-modal .delete-form form .contact-submit div:hover, #warning-modal .contact-confirm-form form .contact-submit button:hover, #warning-modal .contact-confirm-form form .contact-submit div:hover, #warning-modal .warning-message form .contact-submit button:hover, #warning-modal .warning-message form .contact-submit div:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #contact-modal .contact-form form .contact-submit button:active, #contact-modal .contact-form form .contact-submit div:active, #contact-modal .delete-form form .contact-submit button:active, #contact-modal .delete-form form .contact-submit div:active, #contact-modal .contact-confirm-form form .contact-submit button:active, #contact-modal .contact-confirm-form form .contact-submit div:active, #contact-modal .warning-message form .contact-submit button:active, #contact-modal .warning-message form .contact-submit div:active, #delete-modal .contact-form form .contact-submit button:active, #delete-modal .contact-form form .contact-submit div:active, #delete-modal .delete-form form .contact-submit button:active, #delete-modal .delete-form form .contact-submit div:active, #delete-modal .contact-confirm-form form .contact-submit button:active, #delete-modal .contact-confirm-form form .contact-submit div:active, #delete-modal .warning-message form .contact-submit button:active, #delete-modal .warning-message form .contact-submit div:active, #contact-confirm-modal .contact-form form .contact-submit button:active, #contact-confirm-modal .contact-form form .contact-submit div:active, #contact-confirm-modal .delete-form form .contact-submit button:active, #contact-confirm-modal .delete-form form .contact-submit div:active, #contact-confirm-modal .contact-confirm-form form .contact-submit button:active, #contact-confirm-modal .contact-confirm-form form .contact-submit div:active, #contact-confirm-modal .warning-message form .contact-submit button:active, #contact-confirm-modal .warning-message form .contact-submit div:active, #warning-modal .contact-form form .contact-submit button:active, #warning-modal .contact-form form .contact-submit div:active, #warning-modal .delete-form form .contact-submit button:active, #warning-modal .delete-form form .contact-submit div:active, #warning-modal .contact-confirm-form form .contact-submit button:active, #warning-modal .contact-confirm-form form .contact-submit div:active, #warning-modal .warning-message form .contact-submit button:active, #warning-modal .warning-message form .contact-submit div:active {
@@ -1031,7 +1031,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1047,8 +1047,8 @@ footer .footer-right .footer-list a:active {
 
 .meetings-container .submit-buttom button:hover, .give_opinions-container .submit-buttom button:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .meetings-container .submit-buttom button:active, .give_opinions-container .submit-buttom button:active {
@@ -1086,7 +1086,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1102,8 +1102,8 @@ footer .footer-right .footer-list a:active {
 
 .meetings-container .contact-submit button:hover, .meetings-container .contact-submit div:hover, .give_opinions-container .contact-submit button:hover, .give_opinions-container .contact-submit div:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .meetings-container .contact-submit button:active, .meetings-container .contact-submit div:active, .give_opinions-container .contact-submit button:active, .give_opinions-container .contact-submit div:active {
@@ -1164,7 +1164,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1178,8 +1178,8 @@ footer .footer-right .footer-list a:active {
 
 .meetings-container .return-btn a:hover, .give_opinions-container .return-btn a:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .meetings-container .return-btn a:active, .give_opinions-container .return-btn a:active {
@@ -1235,7 +1235,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1251,8 +1251,8 @@ footer .footer-right .footer-list a:active {
 
 .contact-container .contact-submit button:hover, .contact-container .contact-submit div:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .contact-container .contact-submit button:active, .contact-container .contact-submit div:active {
@@ -1410,7 +1410,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1426,8 +1426,8 @@ footer .footer-right .footer-list a:active {
 
 .coin-container .btn-container .buy-coin-btn:hover, .coin-container .btn-container .return-top-btn:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .coin-container .btn-container .buy-coin-btn:active, .coin-container .btn-container .return-top-btn:active {
@@ -1535,7 +1535,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1551,8 +1551,8 @@ footer .footer-right .footer-list a:active {
 
 #buy-coin-modal .buy-coin-form form .contact-submit button:hover, #buy-coin-modal .buy-coin-form form .contact-submit div:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #buy-coin-modal .buy-coin-form form .contact-submit button:active, #buy-coin-modal .buy-coin-form form .contact-submit div:active {
@@ -1683,7 +1683,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1699,8 +1699,8 @@ footer .footer-right .footer-list a:active {
 
 .mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-1 .link-btn:hover, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-1 .link-btn:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .mypage-container .mypage-contents .col-md-6 .box .details .messages-container .row .col-1 .link-btn:active, .mypage-container .mypage-contents .col-md-12 .box .details .messages-container .row .col-1 .link-btn:active {
@@ -1736,6 +1736,53 @@ footer .footer-right .footer-list a:active {
 }
 
 .mypage-container .mypage-contents .posts .details .meetings .container .btn .link-btn, .mypage-container .mypage-contents .posts .details .give-opinions .container .btn .link-btn {
+  margin: 0;
+}
+
+.message-container {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.message-container .heading h2 {
+  text-align: center;
+}
+
+.message-container .message {
+  background-color: #9bc8bb;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #8abfb0;
+  margin: 30px 0;
+}
+
+.message-container .btn {
+  display: block;
+}
+
+.message-container .btn .link-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+.message-container .btn .left {
+  margin-right: 50px;
+}
+
+.message-container .btn form {
+  display: inline-block;
+}
+
+.message-container .btn form button {
   margin: 0;
 }
 
@@ -1777,7 +1824,7 @@ footer .footer-right .footer-list a:active {
   text-align: center;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.85;
   font-size: large;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1793,8 +1840,8 @@ footer .footer-right .footer-list a:active {
 
 .dm-container #contact-message .contact-form form .contact-submit button:hover, .dm-container #contact-message .contact-form form .contact-submit div:hover {
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .dm-container #contact-message .contact-form form .contact-submit button:active, .dm-container #contact-message .contact-form form .contact-submit div:active {

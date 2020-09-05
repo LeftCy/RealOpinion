@@ -17,7 +17,7 @@ $description = 'メッセージ';
             <h5>送信内容</h5>
             <p>{{ $input_message }}</p>
             <h5>獲得コイン</h5>
-            <p>{{ $required_coin }}</p>
+            <p>{{ $required_coin }}枚</p>
             
         </div>
         <!--
